@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MarStuff</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container text-center">
+    <h1 class="jumbotron">MadStuff MarStuff</h1>
+    <div>
+
+
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Get Data!</a></p>
+      
+      {% for i in range(0,10)%}
+      <h2>{{list0[i]}}</h2>
+      <h2>{{list[i]}}</h2>
+      <h2>{{list1[i]}}</h2>
+      {% endfor %}
+
+      {% for j in range(0,5) %}
+      <img src={{list2[j]}}  width="500" height="600">
+      {% endfor %}
+      
+      
+
+
+    </div>
+  </div>
+</body>
+
+</html>
